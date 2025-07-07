@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/fetch-image.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I'm <span>Vishwajeet </span> <br />Singh from India</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT   -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img class="saloon" src="images/Saloon.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">💼 About Me</h1>
+            <p class="Dis">
+              I'm a passionate and creative developer with a strong foundation
+              in UI/UX design, web development, and mobile app development. I
+              specialize in crafting user-centric digital experiences that are
+              not only functional but also visually compelling.
+              <br />With a deep understanding of design principles, front-end
+              technologies, and cross-platform development tools, I enjoy
+              building everything from elegant interfaces to full-fledged
+              responsive applications. Whether it's designing a smooth user
+              flow, coding a dynamic web interface, or deploying scalable mobile
+              apps, I take pride in delivering intuitive, efficient, and
+              polished solutions.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active" onclick="opentab('skils')">
+                🧠 Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                🧩 Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
+                🎓 Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skils">
+              <ul class="don">
+                <li>
+                  <span>🎨 UI/UX</span><br />
+                  Crafting Seamless Experiences, One Screen at a Time.
+                </li>
+                <li>
+                  <span>🌐 Web Development</span><br />
+                  Web Dev = Code × Creativity × Performance
+                </li>
+                <li>
+                  <span>📱 App Development</span><br />
+                  From Wireframe to Play Store—Complete App Journeys.
+                </li>
+                <li>
+                  <span>🛠️ Tools & Platforms</span><br />
+                  Git, GitHub, VS Code, Chrome DevTools, Firebase, Node.js
+                </li>
+                <li>
+                  <span>🤝 Soft Skills</span><br />
+                  Communication, Collaboration, Problem-Solving, Time Management
+                </li>
+              </ul>
+            </div>
+            <!-- tab2 -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>🛠️ Freelance UI/UX Designer & Developer (Remote)</span
+                  ><br />
+                  🕒2023 – ⏳Present
+                </li>
+                <ul class="chota">
+                  <li>
+                    🎯 Delivered modern websites and web apps for various
+                    clients
+                  </li>
+                  <li>
+                    📐 Designed wireframes and prototypes in Figma and Adobe XD
+                  </li>
+                  <li>
+                    🌐 Deployed fully responsive pages with clean, scalable code
+                  </li>
+                  <li>
+                    💬 Communicated directly with clients to refine project
+                    goals and design flows
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <!-- tab3 -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>🏫 Bachelor of Technology in Computer Science</span
+                  ><br />
+                  📍Lovely Professional University
+                  <br /><br />
+                  <h6>🗓️ 2021 – 2025</h6>
+                </li>
+                <ul class="specialize">
+                  <li>
+                    🧱 Core Skills: HTML5, CSS3, JavaScript, React.js, Node.js
+                  </li>
+                  <li>
+                    🛠️ Projects: Dynamic weather app, RESTful API integrations
+                  </li>
+                  <li>
+                    📚 Key Courses: Web Technologies, Full Stack Development,
+                    Databases
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SERVICES -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="serviceslist">
+          <div>
+            <h2>💻 Web Development</h2>
+            <p>
+              I craft responsive, accessible, and high-performance websites
+              using HTML5, CSS3, and JavaScript. Leveraging frameworks like
+              React.js and integrating RESTful APIs, I ensure dynamic
+              functionality and seamless user experiences. My development
+              approach prioritizes clean, maintainable code and mobile-first
+              design, ensuring websites look and perform great on all devices.
+              With tools like Git, GitHub, and Chrome DevTools, I streamline the
+              development process and maintain strong version control.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <h2>🎨 UI/UX Design</h2>
+            <p>
+              I design intuitive, user-centered digital experiences through
+              wireframing, prototyping, and user flow optimization. Using tools
+              like Figma and Adobe XD, I create visually appealing interfaces
+              that align with user needs and business goals. My approach focuses
+              on human-centered design principles, ensuring accessibility,
+              usability, and aesthetic balance across all screen sizes. I turn
+              ideas into interactive prototypes that guide seamless development.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <h2>📱 App Development</h2>
+            <p>
+              I develop cross-platform mobile applications using React Native,
+              combining robust functionality with sleek, responsive interfaces.
+              From Firebase integration to performance optimization, I ensure
+              apps are scalable, secure, and user-friendly. My mobile
+              development process emphasizes smooth navigation, real-time
+              functionality, and pixel-perfect UI design for both iOS and
+              Android platforms, delivering a native-like experience across
+              devices.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PORTFOLIO -->
+      <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="worklist">
+          <div class="work">
+            <img src="images/work1.png" alt="" />
+            <div class="layer">
+              <h3>Corausal Post</h3>
+              <p>
+                Showcasing my latest designs, apps, and web creations
+                beautifully.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work2.jpg" alt="" />
+            <div class="layer">
+              <h3>Mobile Prototype</h3>
+              <p>
+                Interactive mobile prototype showcasing seamless user experience
+                and intuitive design.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work3.jpeg" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Social media app connecting users through posts, chats, and
+                stories.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+      <!-- CERTIFICATES (PDFs with Verification Links) -->
+<div class="certificates" id="certificates">
+  <div class="container">
+    <h1 class="subtitle">🎓 My Certificates</h1>
+    <div class="certificate-list">
+      <!-- Certificate 1 -->
+      <div class="certificate pdf">
+        <img src="Certificate/certimage/1.png" alt="Asymmetric Cryptography" />
+        <div class="cert-layer">
+          <h3>Asymmetric Cryptography and Key Management</h3>
+          <p>Coursera · May 2024</p>
+          <a href="https://coursera.org/verify/ZKY97DHLGDSF" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="certificate pdf">
+        <img src="Certificate/certimage/2.png" alt="Cryptographic Hash and Integrity Protection" />
+        <div class="cert-layer">
+          <h3>Cryptographic Hash and Integrity Protection</h3>
+          <p>Coursera · May 2024</p>
+          <a href="https://www.coursera.org/account/accomplishments/verify/VCLGTTUGU2K3" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="certificate pdf">
+        <img src="Certificate/certimage/3.png" alt="Cryptography" />
+        <div class="cert-layer">
+          <h3>Cryptography</h3>
+          <p>ISC² · May 2024</p>
+          <a href="https://coursera.org/verify/D89AXWNHQ88T" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate 4 -->
+      <div class="certificate pdf">
+        <img src="Certificate/certimage/4.png" alt="Cyber Incident Response" />
+        <div class="cert-layer">
+          <h3>Cyber Incident Response</h3>
+          <p>Infosec · May 2024</p>
+          <a href="https://coursera.org/verify/C4CW9JR3C55Y" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate 5 -->
+      <div class="certificate pdf">
+        <img src="Certificate/certimage/5.png" alt="Mathematical Foundations for Cryptography" />
+        <div class="cert-layer">
+          <h3>Mathematical Foundations for Cryptography</h3>
+          <p>Coursera · Mar 2024</p>
+          <a href="https://coursera.org/verify/AS7SEKY5HMLS" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate 6 -->
+      <div class="certificate pdf">
+        <img src="Certificate/certimage/6.png" alt="Stages of Incident Response" />
+        <div class="cert-layer">
+          <h3>Stages of Incident Response</h3>
+          <p>Infosec · May 2024</p>
+          <a href="https://coursera.org/verify/RQB53RDUDW9J" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate 7 -->
+      <div class="certificate pdf">
+        <img src="Certificate/certimage/7.png" alt="Symmetric Cryptography" />
+        <div class="cert-layer">
+          <h3>Symmetric Cryptography</h3>
+          <p>Coursera · Apr 2024</p>
+          <a href="https://coursera.org/verify/UMQE8CYRQCNW" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate 8 -->
+      <div class="certificate pdf">
+        <img src="Certificate/certimage/8.png" alt="Technical Deep Dive with IR Tools" />
+        <div class="cert-layer">
+          <h3>Technical Deep Dive with IR Tools</h3>
+          <p>Infosec · May 2024</p>
+          <a href="https://coursera.org/verify/TQ6AQXYPEMVN" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CONTACT   -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>vishwajeet3827@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>9555633827</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/vpuiuxdesign/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/9555633827?text=Hi%2C%20I%20visited%20your%20website%20and%20I%27m%20interested%20in%20your%20web%20development%20services.%20Can%20you%20tell%20me%20more%3F" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+          <a href="linkedin.com/in/vishwajeet-singh-b6728b222"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="Certificate/VishwaSpecialized CV.pdf" download class="btnn">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet" >
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btnn2">Sumbit</button>
+          
+        </form>
+        <span id="msg"></span>
+
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © 2025 vpuiuxdesign. Website Design & Development. All rights reserved.<i class="fa-solid fa-heart"></i>
+</p>
+  </div>
+</div>    
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px  ";
+      }
+
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby-1xeair-h80ONm3okRVIfQ4R768Q7RD4Ly7zcPVwV_sWx4CpAKKmNVI81hlQydqquKQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerHTML = "Form Submitted Successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },3000)
+        form.reset()
+
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
